@@ -2,6 +2,9 @@ import CustomButton from "@/components/Title";
 import React, { useState } from "react";
 import { Button, Text, TextInput, View, Form, Input, Label} from "react-native";
 
+export default function HomeScreen(){
+  
+return(
 <Veiw>
   <Form>
     <Label>Digite o seu nome</Label>
@@ -13,3 +16,7 @@ import { Button, Text, TextInput, View, Form, Input, Label} from "react-native";
     <Input type="submit"/>
   </Form>
 </Veiw>
+)  
+  
+}
+
