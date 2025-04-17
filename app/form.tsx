@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import { Button, Text, TextInput, View, Form, Input, Label} from "react-native";
 
 export default function HomeScreen(){
+
+const nome = "Alisson";
+const [name, setName] = userSate(name);
   
 return(
 <Veiw>
@@ -16,7 +19,6 @@ return(
     <Input type="submit"/>
   </Form>
 </Veiw>
-)  
-  
-}
+);
 
+}
