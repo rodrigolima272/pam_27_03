@@ -6,8 +6,6 @@ interface Props {
     onPress: () => void
 }
 
-
-
 export default function CustomButton({title, onPress}: Props) {
 
     return(
@@ -15,7 +13,6 @@ export default function CustomButton({title, onPress}: Props) {
             <Text style={styles.text}>{title}</Text>
         </TouchableOpacity>
     );
-
 }
 
 const styles = StyleSheet.create({
@@ -27,5 +24,5 @@ const styles = StyleSheet.create({
     text: {
         color: "white",
         textAlign: "center"
-    }
-})
+    },
+});
