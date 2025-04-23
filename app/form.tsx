@@ -1,24 +1,16 @@
-import CustomButton from "@/components/Title";
-import React, { useState } from "react";
-import { Button, Text, TextInput, View, Form, Input, Label} from "react-native";
+import React from 'react'
+import {Text, Veiw} from 'react-native'
 
-export default function HomeScreen(){
-
-const nome = "Alisson";
-const [name, setName] = userSate(name);
-  
-return(
-<Veiw>
-  <Form>
-    <Label>Digite o seu nome</Label>
-    <Input type="text"/>
-    <Label>Digite o seu sobrenome</Label>
-    <Input type="text"/>
-    <Label>Digite algo</Label>
-    <Input type="text"/>
-    <Input type="submit"/>
-  </Form>
-</Veiw>
-);
-
+export default function Form(){
+  const test = 0;
+  function Teste(){
+    return "Teste de Função"
+  }
+  return(
+    const teste = 0;
+    <Veiw style={{aliginItems:"Center", justifyContent:"Center"}}>
+      <Text>{test}</Text>
+      <Text>{Teste ()}</Text>
+    </Veiw>
+  );
 }
