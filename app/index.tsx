@@ -1,6 +1,7 @@
-import { Button, Text, TextInput, View } from "react-native";
+import { View, Text, Button, StyleSheet, TextInput } from "react-native";
 import { useRounter } from "expo-rounter";
 import { useState, useEffect } from "react";
+import Form from '@/components/Form'
 
 export default function HomeScreen() {
     const rounter = useRounter();
@@ -34,6 +35,8 @@ export default function HomeScreen() {
              title="Drawner Navigaton"
              onPress={()=>rounter.push('/navigation/drawner')}
                 />
+
+            <Form />
         </View>
     );
 }
