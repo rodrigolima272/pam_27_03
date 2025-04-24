@@ -3,10 +3,6 @@ import Form from '@/components/Form'
 import {Text, Veiw} from 'react-native'
 
 export default function FormScreen(){
-  const test = 0;
-  function Teste(){
-    return "Teste de Função"
-  }
   return(
     <Veiw style={{aliginItems:"Center", justifyContent:"Center"}}>
       <Form />
