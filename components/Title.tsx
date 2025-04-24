@@ -1,11 +1,9 @@
-import React from "react";
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 
 interface Props {
     title: string;
     onPress: () => void
 }
-
 export default function CustomButton({title, onPress}: Props) {
 
     return(
@@ -14,7 +12,6 @@ export default function CustomButton({title, onPress}: Props) {
         </TouchableOpacity>
     );
 }
-
 const styles = StyleSheet.create({
     button: {
         backgroundColor: "red",
