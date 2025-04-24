@@ -19,6 +19,21 @@ export default function HomeScreen() {
             <Button title="Diminuir" onPress={() => {setCount(count - 1)}}/>
             <Button title="Resetar" onPress={() => {setCount(- 0)}}/>
             <Button title = "Ir para Sobre" onPress={() => rounter.push("/about")}/>
+
+            <Text style={styles.title}>Menu de Navegação</Text>
+            
+            <Button 
+             title="Stack Navigaton"
+             onPress={()=>rounter.push('/navigation/stack')}
+                />
+            <Button 
+             title="Tab Navigaton"
+             onPress={()=>rounter.push('/navigation/tab')}
+                />
+            <Button 
+             title="Drawner Navigaton"
+             onPress={()=>rounter.push('/navigation/drawner')}
+                />
         </View>
     );
 }
