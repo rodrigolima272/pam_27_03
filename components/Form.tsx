@@ -1,6 +1,6 @@
 import React {useState} from "react";
 import {Text, TextInput, Veiw} from "react-native";
-import {CustomButton} from './Title'
+import CustomButton from './Title'
 
 export default function Form(){
 const [nome, setNome] = useState(' ');
