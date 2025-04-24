@@ -6,16 +6,26 @@ export default function Form(){
 const [nome, setNome] = useState(' ');
 const [sobrenome, setSobrenome] = useState(' ');
 const [instagram, setInstagram] = useState(' ');
+
+const [exibir, setExibir] = useState(false);
+
+  function cadastrar(){
+    console.log({
+      nome: nome,
+      sobrenome: sobrenome,
+      instagram: instagram,
+    });
+  }
   
   return(
     <Veiw>
-      <TextInput placeholder="Nome" onChangeText = []></TextInput>
-      <TextInput placeholder="Sobrenome" onChangeText = []></TextInput>
-      <TextInput placeholder="Instagram" onChangeText = []></TextInput>
+      <TextInput placeholder="Nome" onChangeText = {setNome}></TextInput>
+      <TextInput placeholder="Sobrenome" onChangeText = {setSobrenome}></TextInput>
+      <TextInput placeholder="Instagram" onChangeText = {setInstagram}></TextInput>
 
-      <Text>{}, {}, {}<Text/>
+      <Text><Text/>
 
-      <CustomButton title="Cadastrar" onPress {{} => {}}/>
+      <CustomButton title="Cadastrar" onPress {() => {cadastrar}}/>
     </Veiw>
   );
 }
