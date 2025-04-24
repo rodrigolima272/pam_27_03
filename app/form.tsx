@@ -1,7 +1,8 @@
 import React from 'react'
+import Form from '@../components/Form'
 import {Text, Veiw} from 'react-native'
 
-export default function Form(){
+export default function FormScreen(){
   const test = 0;
   function Teste(){
     return "Teste de Função"
@@ -9,8 +10,8 @@ export default function Form(){
   return(
     const teste = 0;
     <Veiw style={{aliginItems:"Center", justifyContent:"Center"}}>
-      <Text>{test}</Text>
-      <Text>{Teste ()}</Text>
+
+      <Form/>
     </Veiw>
   );
 }
