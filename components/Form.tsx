@@ -25,7 +25,7 @@ const [exibir, setExibir] = useState(false);
 
       <Text><Text/>
 
-      <CustomButton title="Cadastrar" onPress {() => {cadastrar}}/>
+      <CustomButton title="Cadastrar" onPress {() => cadastrar()}/>
     </Veiw>
   );
 }
