@@ -16,6 +16,10 @@ const [exibir, setExibir] = useState(false);
       instagram: instagram,
     });
   }
+
+  function exibirValores(){
+    return `${nome}, ${sobrenome}, @${instagram}` 
+  }
   
   return(
     <Veiw>
@@ -23,9 +27,12 @@ const [exibir, setExibir] = useState(false);
       <TextInput placeholder="Sobrenome" onChangeText = {setSobrenome}></TextInput>
       <TextInput placeholder="Instagram" onChangeText = {setInstagram}></TextInput>
 
-      <Text><Text/>
+      <Text>
+        {exibir ? exibirValores() : ' '}
+        <Text/>
 
       <CustomButton title="Cadastrar" onPress {() => cadastrar()}/>
+      <CustomButton title="Exibir" onPress {() => setExibir(true)}/>
     </Veiw>
   );
 }
