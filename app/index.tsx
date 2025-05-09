@@ -1,11 +1,14 @@
+import React from 'react'
 import { View, Text, Button, StyleSheet, TextInput } from "react-native";
-import { useRounter } from "expo-rounter";
+import { useRouter } from "expo-router";
 import { useState, useEffect } from "react";
 import Form from '@/components/Form'
 
 export default function HomeScreen() {
+    const name = "Alisson"
     const rounter = useRounter();
     const[count, setCount] = useState(0);
+    const[nome, setNome] = useState(0);
 
     useEffect(() => {
         console.log("componente montado!");
@@ -13,7 +16,7 @@ export default function HomeScreen() {
 
     return(
         <View style={{flex: 1, justifyContent:"center", alignItems: "center"}}>
-            <Text>Bem-vindo ao meu App, {nome} :D</Text>
+            <Text>Bem-vindo ao meu App, {name} :D</Text>
             <TextInput placeholder="Digite algo" onChangeText={setNome}/>
             <Text>Contador: {count}</Text>
             <Button title="Aumentar" onPress={() => {setCount(count + 1)}}/>

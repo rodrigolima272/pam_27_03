@@ -20,7 +20,7 @@ const [exibir, setExibir] = useState(false);
   function exibirValores(){
     return `${nome}, ${sobrenome}, @${instagram}` 
   }
-  
+}
   return(
     <Veiw>
       <TextInput placeholder="Nome" onChangeText = {setNome}></TextInput>
