@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Button, StyleSheet, TextInput } from "react-native";
+import { View, Text, Button, TextInput } from "react-native";
 import { useRouter } from "expo-router";
 import { useState, useEffect } from "react";
 import Form from '@/components/Form'

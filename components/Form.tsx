@@ -1,5 +1,5 @@
 import React {useState} from "react";
-import {Text, TextInput, Veiw} from "react-native";
+import {Text, TextInput, View} from "react-native";
 import CustomButton from './Title'
 
 export default function Form(){

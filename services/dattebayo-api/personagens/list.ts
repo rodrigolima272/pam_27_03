@@ -7,7 +7,9 @@ export async function fetPersonagens(){
         if(!response.ok){
             throw new Error(`Erro na aquisição: ${response.statusText}`)
         }
+        return await response.json()
     }catch(error){
-
+        console.error(`Erro ao buscar personagens`);
+        return []
     }
 }
